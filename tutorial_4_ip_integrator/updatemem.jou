@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# updatemem v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# 
+# Start of session at: Wed Jan 17 16:19:29 2024
+# Process ID: 10640
+# Current directory: c:/Users/machs/Software/ECE532/tutorial_4_ip_integrator
+# Command line: updatemem.exe -mode batch -source C:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace -tclargs -meminfo C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.mmi -data C:/Xilinx/SDK/2018.3/data/embeddedsw/lib/microblaze/mb_bootloop_le.elf -proc design_1_i/microblaze_0 -bit C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit -out C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.sdk/design_1_wrapper_hw_platform_0/download.bit -force
+# Log file: c:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/updatemem.log
+# Journal file: c:/Users/machs/Software/ECE532/tutorial_4_ip_integrator\updatemem.jou
+#-----------------------------------------------------------
+source C:/Xilinx/SDK/2018.3/scripts/updatemem/main.tcl -notrace

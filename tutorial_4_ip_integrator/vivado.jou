@@ -1,0 +1,190 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jan 17 15:10:59 2024
+# Process ID: 28704
+# Current directory: C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15988 C:\Users\machs\Software\ECE532\tutorial_4_ip_integrator\tutorial_3.xpr
+# Log file: C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/vivado.log
+# Journal file: C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.xpr
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.srcs/sources_1/bd/design_1/design_1.bd}
+set_property HDL_ATTRIBUTE.DEBUG true [get_bd_nets {axi_uartlite_0_interrupt }]
+startgroup
+set_property HDL_ATTRIBUTE.DEBUG false [get_bd_nets { axi_uartlite_0_interrupt } ]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ila:6.2 ila_0
+endgroup
+set_property -dict [list CONFIG.C_NUM_OF_PROBES {44} CONFIG.C_ENABLE_ILA_AXI_MON {true} CONFIG.C_MONITOR_TYPE {AXI}] [get_bd_cells ila_0]
+connect_bd_intf_net [get_bd_intf_pins ila_0/SLOT_0_AXI] [get_bd_intf_pins mig_7series_0/S_AXI]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins ila_0/clk] [get_bd_pins mig_7series_0/ui_clk]
+regenerate_bd_layout
+save_bd_design
+validate_bd_design
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_bd_design [get_bd_designs design_1]
+open_bd_design {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.srcs/sources_1/bd/design_1/design_1.bd}
+close_bd_design [get_bd_designs design_1]
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
+set_property PROBES.FILE {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+file copy -force C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/design_1_wrapper.sysdef C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.sdk -hwspec C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.sdk/design_1_wrapper.hdf
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_run synth_1 -name synth_1
+close_design
+set_property PROBES.FILE {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes design_1_i/microblaze_0_axi_periph_M02_AXI_WREADY -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes design_1_i/microblaze_0_axi_periph_M02_AXI_WVALID -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a100t_0] -filter {CELL_NAME=~"design_1_i/ila_0"}]]
+save_wave_config {C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_3.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_project
+create_project tutorial_5 C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5 -part xc7a100tcsg324-1
+set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
+create_bd_design "design_1"
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:microblaze:11.0 microblaze_0
+endgroup
+set_property -dict [list CONFIG.C_I_AXI {1}] [get_bd_cells microblaze_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:microblaze -config { axi_intc {0} axi_periph {Enabled} cache {None} clk {New Clocking Wizard (100 MHz)} debug_module {Debug Only} ecc {None} local_mem {8KB} preset {None}}  [get_bd_cells microblaze_0]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLK_IN1_BOARD_INTERFACE {sys_clock} CONFIG.RESET_BOARD_INTERFACE {reset} CONFIG.PRIM_SOURCE {Single_ended_clock_capable_pin}] [get_bd_cells clk_wiz_1]
+endgroup
+startgroup
+set_property -dict [list CONFIG.CLKOUT2_USED {true} CONFIG.CLKOUT3_USED {true} CONFIG.CLKOUT2_REQUESTED_OUT_FREQ {200} CONFIG.CLKOUT3_REQUESTED_OUT_FREQ {50} CONFIG.RESET_TYPE {ACTIVE_LOW} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKOUT1_DIVIDE {5} CONFIG.MMCM_CLKOUT2_DIVIDE {20} CONFIG.NUM_OUT_CLKS {3} CONFIG.RESET_PORT {resetn} CONFIG.CLKOUT2_JITTER {114.829} CONFIG.CLKOUT2_PHASE_ERROR {98.575} CONFIG.CLKOUT3_JITTER {151.636} CONFIG.CLKOUT3_PHASE_ERROR {98.575}] [get_bd_cells clk_wiz_1]
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:mig_7series:4.2 mig_7series_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:mii_to_rmii:2.0 mii_to_rmii_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_uartlite:2.0 axi_uartlite_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_ethernetlite:3.0 axi_ethernetlite_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:mig_7series -config {Board_Interface "ddr2_sdram" }  [get_bd_cells mig_7series_0]
+connect_bd_intf_net [get_bd_intf_pins axi_ethernetlite_0/MII] [get_bd_intf_pins mii_to_rmii_0/MII]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out2] [get_bd_pins mig_7series_0/sys_clk_i]
+connect_bd_net [get_bd_pins clk_wiz_1/clk_out3] [get_bd_pins mii_to_rmii_0/ref_clk]
+regenerate_bd_layout
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins clk_wiz_1/resetn]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {sys_clock ( System Clock ) } Manual_Source {Auto}}  [get_bd_pins clk_wiz_1/clk_in1]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins rst_clk_wiz_1_100M/ext_reset_in]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {/mig_7series_0/ui_clk (81 MHz)} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/mig_7series_0/S_AXI} intc_ip {Auto} master_apm {0}}  [get_bd_intf_pins mig_7series_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins mig_7series_0/sys_rst]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {eth_rmii ( Ethernet RMII ) } Manual_Source {Auto}}  [get_bd_intf_pins mii_to_rmii_0/RMII_PHY_M]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( Reset ) } Manual_Source {New External Port (ACTIVE_LOW)}}  [get_bd_pins mii_to_rmii_0/rst_n]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_uartlite_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_uartlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {usb_uart ( USB UART ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_uartlite_0/UART]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_ethernetlite_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_ethernetlite_0/S_AXI]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {eth_mdio_mdc ( Ethernet MDIO MDC ) } Manual_Source {Auto}}  [get_bd_intf_pins axi_ethernetlite_0/MDIO]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {Auto} Master {/microblaze_0 (Periph)} Slave {/axi_timer_0/S_AXI} intc_ip {New AXI Interconnect} master_apm {0}}  [get_bd_intf_pins axi_timer_0/S_AXI]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {2 255 414} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins axi_timer_0/interrupt] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins axi_ethernetlite_0/ip2intc_irpt] [get_bd_pins xlconcat_0/In1]
+create_bd_port -dir O -type clk eth_ref_clk
+connect_bd_net [get_bd_ports eth_ref_clk] [get_bd_pins clk_wiz_1/clk_out3]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins mig_7series_0/DDR2]
+endgroup
+regenerate_bd_layout
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_intc:4.1 axi_intc_0
+endgroup
+set_property location {2 336 321} [get_bd_cells axi_intc_0]
+set_property location {2 427 326} [get_bd_cells axi_intc_0]
+connect_bd_intf_net [get_bd_intf_pins microblaze_0/INTERRUPT] [get_bd_intf_pins axi_intc_0/interrupt]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins axi_intc_0/intr]
+regenerate_bd_layout
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/axi_intc_0/s_axi} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins axi_intc_0/s_axi]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {/clk_wiz_1/clk_out1 (100 MHz)} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0/M_AXI_IP} Slave {/axi_uartlite_0/S_AXI} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins microblaze_0/M_AXI_IP]
+regenerate_bd_layout
+file mkdir C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.srcs/constrs_1
+file mkdir C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.srcs/constrs_1/new
+close [ open C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.srcs/constrs_1/new/eth_ref_clk.xdc w ]
+add_files -fileset constrs_1 C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.srcs/constrs_1/new/eth_ref_clk.xdc
+make_wrapper -files [get_files C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+close_bd_design [get_bd_designs design_1]
+file mkdir C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.sdk
+file copy -force C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.runs/impl_1/design_1_wrapper.sysdef C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.sdk -hwspec C:/Users/machs/Software/ECE532/tutorial_4_ip_integrator/tutorial_5/tutorial_5.sdk/design_1_wrapper.hdf
+close_project
+create_project managed_ip_project C:/Users/machs/Software/ECE532/tutorial_6/managed_ip_project -part xc7a100tcsg324-1 -ip
+set_property target_simulator XSim [current_project]
+open_project C:/Users/machs/Software/ECE532/tutorial_5/tutorial_5.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+report_utilization -name utilization_1
+close_project
+create_peripheral xilinx.com user myip 1.0 -dir C:/Users/machs/Software/ECE532/tutorial_6/managed_ip_project/../ip_repo
+add_peripheral_interface S00_AXI -interface_mode slave -axi_type lite [ipx::find_open_core xilinx.com:user:myip:1.0]
+generate_peripheral -driver -bfm_example_design -debug_hw_example_design [ipx::find_open_core xilinx.com:user:myip:1.0]
+write_peripheral [ipx::find_open_core xilinx.com:user:myip:1.0]
+set_property  ip_repo_paths  C:/Users/machs/Software/ECE532/tutorial_6/managed_ip_project/../ip_repo/myip_1.0 [current_project]
+update_ip_catalog -rebuild
+ipx::edit_ip_in_project -upgrade true -name edit_myip_v1_0 -directory C:/Users/machs/Software/ECE532/tutorial_6/managed_ip_project/../ip_repo c:/Users/machs/Software/ECE532/tutorial_6/ip_repo/myip_1.0/component.xml
+update_compile_order -fileset sources_1
+current_project managed_ip_project
+close_project
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 2 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+set_property core_revision 3 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete

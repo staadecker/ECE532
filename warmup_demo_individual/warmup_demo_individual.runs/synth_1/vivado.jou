@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Jan 21 20:28:48 2024
+# Process ID: 14216
+# Current directory: C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.runs/synth_1
+# Command line: vivado.exe -log max.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source max.tcl
+# Log file: C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.runs/synth_1/max.vds
+# Journal file: C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source max.tcl -notrace

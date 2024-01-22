@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tutorial_tb_time_impl.v" \
+"../../../../../tutorial_1.srcs/sim_1/imports/tutorial_1/tutorial_tb.v" \
+
+# Do not sort compile order
+nosort
