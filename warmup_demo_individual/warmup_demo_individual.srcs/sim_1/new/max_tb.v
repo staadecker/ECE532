@@ -51,7 +51,7 @@ module max_tb();
         #(CLK_PERIOD * 3)
         
         reset = 0;
-        in_valid = 1;
+        in_valid = 0;
         
         for (i=0; i < 255; i = i + 1) begin
         if (i % 2 == 0) input_number = input_number + 2;

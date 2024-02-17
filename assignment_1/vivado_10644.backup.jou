@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Feb  9 16:47:37 2024
+# Process ID: 10644
+# Current directory: C:/Users/machs/Software/ECE532/assignment_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent45284 C:\Users\machs\Software\ECE532\assignment_1\assignment_1.xpr
+# Log file: C:/Users/machs/Software/ECE532/assignment_1/vivado.log
+# Journal file: C:/Users/machs/Software/ECE532/assignment_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/machs/Software/ECE532/assignment_1/assignment_1.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+synth_design -rtl -name rtl_1
+close_design
+ipx::package_project -root_dir c:/users/machs/software/ece532/assignment_1/assignment_1.srcs -vendor xilinx.com -library user -taxonomy /UserIP -force

@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.sim/sim_1/behav/xsim/xsim.dir/max_tb_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Sun Jan 21 19:50:53 2024" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Thu Jan 25 11:29:17 2024" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.3 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2405991" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "414cbc0a-5161-4a5b-9e60-e857f23ab318" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "9022e8b116d6470693dfc339ccf8ec2d" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "12" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "17" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "16.000 GB" -context "us
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "100 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7392_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1066751829 -regid "" -xml C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.sim/sim_1/behav/xsim/xsim.dir/max_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.sim/sim_1/behav/xsim/xsim.dir/max_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.sim/sim_1/behav/xsim/xsim.dir/max_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7436_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2980367102 -regid "" -xml C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.sim/sim_1/behav/xsim/xsim.dir/max_tb_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.sim/sim_1/behav/xsim/xsim.dir/max_tb_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/machs/Software/ECE532/warmup_demo_individual/warmup_demo_individual.sim/sim_1/behav/xsim/xsim.dir/max_tb_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

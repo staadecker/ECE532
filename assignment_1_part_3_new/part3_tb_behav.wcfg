@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="part3_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="axi_vip_pkg" />
+            <top_module name="glbl" />
+            <top_module name="part3_tb" />
+            <top_module name="std" />
+            <top_module name="vcomponents" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="1165000001fs"></ZoomEndTime>
+      <Cursor1Time time="921347000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="210"></NameColumnWidth>
+      <ValueColumnWidth column_width="151"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="109" />
+   <wvobject fp_name="/part3_tb/aclk" type="logic">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/aresetn" type="logic">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_AWADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_AWADDR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWADDR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_WDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_WDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_BRESP" type="array">
+      <obj_property name="ElementShortName">S_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_BVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_BREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_ARADDR" type="array">
+      <obj_property name="ElementShortName">S_AXI_ARADDR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARADDR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_ARVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_ARREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_ARREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_ARREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_RDATA" type="array">
+      <obj_property name="ElementShortName">S_AXI_RDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_RRESP" type="array">
+      <obj_property name="ElementShortName">S_AXI_RRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_RVALID" type="logic">
+      <obj_property name="ElementShortName">S_AXI_RVALID</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_RREADY" type="logic">
+      <obj_property name="ElementShortName">S_AXI_RREADY</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_RREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/REG_0" type="array">
+      <obj_property name="ElementShortName">REG_0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/REG_1" type="array">
+      <obj_property name="ElementShortName">REG_1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/REG_2" type="array">
+      <obj_property name="ElementShortName">REG_2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REG_2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/REG_3" type="logic">
+      <obj_property name="ElementShortName">REG_3</obj_property>
+      <obj_property name="ObjectShortName">REG_3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_awaddr" type="array">
+      <obj_property name="ElementShortName">axi_awaddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_awaddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_awready" type="logic">
+      <obj_property name="ElementShortName">axi_awready</obj_property>
+      <obj_property name="ObjectShortName">axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_wready" type="logic">
+      <obj_property name="ElementShortName">axi_wready</obj_property>
+      <obj_property name="ObjectShortName">axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_bresp" type="array">
+      <obj_property name="ElementShortName">axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_bvalid" type="logic">
+      <obj_property name="ElementShortName">axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_araddr" type="array">
+      <obj_property name="ElementShortName">axi_araddr[3:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_araddr[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_arready" type="logic">
+      <obj_property name="ElementShortName">axi_arready</obj_property>
+      <obj_property name="ObjectShortName">axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_rdata" type="array">
+      <obj_property name="ElementShortName">axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_rresp" type="array">
+      <obj_property name="ElementShortName">axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/slv_reg0" type="array">
+      <obj_property name="ElementShortName">slv_reg0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/slv_reg1" type="array">
+      <obj_property name="ElementShortName">slv_reg1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/slv_reg2" type="array">
+      <obj_property name="ElementShortName">slv_reg2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">slv_reg2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/slv_reg3" type="logic">
+      <obj_property name="ElementShortName">slv_reg3</obj_property>
+      <obj_property name="ObjectShortName">slv_reg3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/slv_reg_rden" type="logic">
+      <obj_property name="ElementShortName">slv_reg_rden</obj_property>
+      <obj_property name="ObjectShortName">slv_reg_rden</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/slv_reg_wren" type="logic">
+      <obj_property name="ElementShortName">slv_reg_wren</obj_property>
+      <obj_property name="ObjectShortName">slv_reg_wren</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/reg_data_out" type="array">
+      <obj_property name="ElementShortName">reg_data_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_data_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/byte_index" type="array">
+      <obj_property name="ElementShortName">byte_index[31:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_index[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/aw_en" type="logic">
+      <obj_property name="ElementShortName">aw_en</obj_property>
+      <obj_property name="ObjectShortName">aw_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/aw_reg" type="array">
+      <obj_property name="ElementShortName">aw_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">aw_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/C_S_AXI_DATA_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_S_AXI_DATA_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_S_AXI_DATA_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/C_S_AXI_ADDR_WIDTH" type="array">
+      <obj_property name="ElementShortName">C_S_AXI_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C_S_AXI_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/S_AXI_WSTRB" type="array">
+      <obj_property name="ElementShortName">S_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">S_AXI_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/ADDR_LSB" type="array">
+      <obj_property name="ElementShortName">ADDR_LSB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ADDR_LSB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/slave/OPT_MEM_ADDR_BITS" type="array">
+      <obj_property name="ElementShortName">OPT_MEM_ADDR_BITS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">OPT_MEM_ADDR_BITS[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/mask532/n" type="array">
+      <obj_property name="ElementShortName">n[4:0]</obj_property>
+      <obj_property name="ObjectShortName">n[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/mask532/value_in" type="array">
+      <obj_property name="ElementShortName">value_in[31:0]</obj_property>
+      <obj_property name="ObjectShortName">value_in[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/mask532/value_out" type="array">
+      <obj_property name="ElementShortName">value_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">value_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/mask532/mask" type="array">
+      <obj_property name="ElementShortName">mask[31:0]</obj_property>
+      <obj_property name="ObjectShortName">mask[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/INIT_AXI_TXN" type="logic">
+      <obj_property name="ElementShortName">INIT_AXI_TXN</obj_property>
+      <obj_property name="ObjectShortName">INIT_AXI_TXN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_WSTRB" type="array">
+      <obj_property name="ElementShortName">M_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_BRESP" type="array">
+      <obj_property name="ElementShortName">M_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_BVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_BREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/is_writing" type="logic">
+      <obj_property name="ElementShortName">is_writing</obj_property>
+      <obj_property name="ObjectShortName">is_writing</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/axi_bready" type="logic">
+      <obj_property name="ElementShortName">axi_bready</obj_property>
+      <obj_property name="ObjectShortName">axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/write_resp_error" type="logic">
+      <obj_property name="ElementShortName">write_resp_error</obj_property>
+      <obj_property name="ObjectShortName">write_resp_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/start_single_write" type="logic">
+      <obj_property name="ElementShortName">start_single_write</obj_property>
+      <obj_property name="ObjectShortName">start_single_write</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/aclk" type="logic">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/aresetn" type="logic">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_awaddr" type="array">
+      <obj_property name="ElementShortName">m_axi_awaddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awaddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_awprot" type="array">
+      <obj_property name="ElementShortName">m_axi_awprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_awready" type="logic">
+      <obj_property name="ElementShortName">m_axi_awready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_awready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_wdata" type="array">
+      <obj_property name="ElementShortName">m_axi_wdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_wstrb" type="array">
+      <obj_property name="ElementShortName">m_axi_wstrb[3:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wstrb[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_wready" type="logic">
+      <obj_property name="ElementShortName">m_axi_wready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_wready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_bresp" type="array">
+      <obj_property name="ElementShortName">m_axi_bresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_bvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_bvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_bready" type="logic">
+      <obj_property name="ElementShortName">m_axi_bready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_araddr" type="array">
+      <obj_property name="ElementShortName">m_axi_araddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_araddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_arprot" type="array">
+      <obj_property name="ElementShortName">m_axi_arprot[2:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arprot[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_arvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_arvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_arready" type="logic">
+      <obj_property name="ElementShortName">m_axi_arready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_arready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_rdata" type="array">
+      <obj_property name="ElementShortName">m_axi_rdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_rresp" type="array">
+      <obj_property name="ElementShortName">m_axi_rresp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rresp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_rvalid" type="logic">
+      <obj_property name="ElementShortName">m_axi_rvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/m_axi_rready" type="logic">
+      <obj_property name="ElementShortName">m_axi_rready</obj_property>
+      <obj_property name="ObjectShortName">m_axi_rready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/axi_vip_0/M_AXI" type="protoinst">
+      <obj_property name="ElementShortName">M_AXI</obj_property>
+      <obj_property name="ObjectShortName">M_AXI</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/INIT_AXI_TXN" type="logic">
+      <obj_property name="ElementShortName">INIT_AXI_TXN</obj_property>
+      <obj_property name="ObjectShortName">INIT_AXI_TXN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_ACLK" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ACLK</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ACLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_ARESETN" type="logic">
+      <obj_property name="ElementShortName">M_AXI_ARESETN</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_ARESETN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_AWVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_AWREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_AWREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_AWREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_WSTRB" type="array">
+      <obj_property name="ElementShortName">M_AXI_WSTRB[3:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WSTRB[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_WVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_WREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_WREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_WREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_BRESP" type="array">
+      <obj_property name="ElementShortName">M_AXI_BRESP[1:0]</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BRESP[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_BVALID" type="logic">
+      <obj_property name="ElementShortName">M_AXI_BVALID</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BVALID</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/M_AXI_BREADY" type="logic">
+      <obj_property name="ElementShortName">M_AXI_BREADY</obj_property>
+      <obj_property name="ObjectShortName">M_AXI_BREADY</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/is_writing" type="logic">
+      <obj_property name="ElementShortName">is_writing</obj_property>
+      <obj_property name="ObjectShortName">is_writing</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/axi_awvalid" type="logic">
+      <obj_property name="ElementShortName">axi_awvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_awvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/axi_wvalid" type="logic">
+      <obj_property name="ElementShortName">axi_wvalid</obj_property>
+      <obj_property name="ObjectShortName">axi_wvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/axi_bready" type="logic">
+      <obj_property name="ElementShortName">axi_bready</obj_property>
+      <obj_property name="ObjectShortName">axi_bready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/write_resp_error" type="logic">
+      <obj_property name="ElementShortName">write_resp_error</obj_property>
+      <obj_property name="ObjectShortName">write_resp_error</obj_property>
+   </wvobject>
+   <wvobject fp_name="/part3_tb/DUT/design_1_i/mask_axi532_0/inst/master/start_single_write" type="logic">
+      <obj_property name="ElementShortName">start_single_write</obj_property>
+      <obj_property name="ObjectShortName">start_single_write</obj_property>
+   </wvobject>
+</wave_config>
