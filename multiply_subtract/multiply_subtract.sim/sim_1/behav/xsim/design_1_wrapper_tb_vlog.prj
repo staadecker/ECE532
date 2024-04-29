@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../multiply_subtract.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../multiply_subtract.srcs/sources_1/imports/hdl/design_1_wrapper.v" \
+"../../../../multiply_subtract.srcs/sim_1/new/design_1_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

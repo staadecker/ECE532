@@ -1,0 +1,87 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Wed Mar  6 16:18:19 2024
+| Host         : StaaBuG15 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+| Design       : design_1_wrapper
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    35 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      4 |            4 |
+|      5 |            1 |
+|    16+ |           16 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             980 |          218 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             190 |           56 |
+| Yes          | No                    | No                     |             275 |           55 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|   Clock Signal  |                                          Enable Signal                                         |                                                                                Set/Reset Signal                                                                                | Slice Load Count | Bel Load Count |
++-----------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]_0[0] |                2 |              4 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/EXP/STATE_DELAY/i_pipe/opt_has_pipe.i_pipe[10].pipe_reg[10][1]_0                                                   |                1 |              4 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/NORM/LZE/ENCODE[0].MUX_Z/OP_DEL/i_pipe/opt_has_pipe.first_q_reg[0]_0                                               |                1 |              4 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/NORM/LZE/ENCODE[0].MUX_Z/OP_DEL/i_pipe/first_q[1]                                                                  |                1 |              4 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/EXP/conv_exp.downsize_exp/flow_up_rnd1                                                                             |                3 |              5 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ABS_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]_0                                                           |                2 |             16 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ABS_DELAY/i_pipe/first_q[5]                                                                              |                4 |             16 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/NORM/LZE/ZERO_DET_CC_1/CARRYS_OUT[1]                                                                               |                4 |             16 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/NORM/LZE/ZERO_DET_CC_1/CHAIN_GEN[3].CARRYS_DEL.NEED_DEL.CARRYS_FD_0                                                |                4 |             16 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/EXP/conv_exp.downsize_exp/STATE_DELAY/i_pipe/op_state[0]                                                           |               10 |             22 |
+|  aclk_IBUF_BUFG | design_1_i/floating_point_0/U0/i_synth/need_combiner.use_3to1_fma.skid_buffer_combiner/b_tx    |                                                                                                                                                                                |                5 |             32 |
+|  aclk_IBUF_BUFG | design_1_i/floating_point_0/U0/i_synth/need_combiner.use_3to1_fma.skid_buffer_combiner/c_tx    |                                                                                                                                                                                |                5 |             32 |
+|  aclk_IBUF_BUFG | design_1_i/floating_point_0/U0/i_synth/need_combiner.use_3to1_fma.skid_buffer_combiner/p_26_in |                                                                                                                                                                                |                5 |             32 |
+|  aclk_IBUF_BUFG | design_1_i/floating_point_0/U0/i_synth/need_combiner.use_3to1_fma.skid_buffer_combiner/p_35_in |                                                                                                                                                                                |                5 |             32 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/sclr_i                                                                                                                                  |               11 |             36 |
+|  aclk_IBUF_BUFG |                                                                                                | design_1_i/floating_point_0/U0/i_synth/FMA_OP.OP/addsub/add/zero_largest                                                                                                       |               13 |             47 |
+|  aclk_IBUF_BUFG | design_1_i/floating_point_0/U0/i_synth/need_combiner.use_3to1_fma.skid_buffer_combiner/a_tx    |                                                                                                                                                                                |               13 |             48 |
+|  aclk_IBUF_BUFG | design_1_i/floating_point_0/U0/i_synth/need_combiner.use_3to1_fma.skid_buffer_combiner/p_48_in |                                                                                                                                                                                |                9 |             48 |
+|  aclk_IBUF_BUFG | design_1_i/floating_point_0/U0/i_synth/HAS_OUTPUT_FIFO.i_output_fifo/fifo0/rd_enable           |                                                                                                                                                                                |               13 |             51 |
+|  aclk_IBUF_BUFG | design_1_i/floating_point_0/U0/i_synth/i_nd_to_rdy/wr_enable                                   |                                                                                                                                                                                |               13 |             51 |
+|  aclk_IBUF_BUFG |                                                                                                |                                                                                                                                                                                |              218 |           1052 |
++-----------------+------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Mar 14 16:35:51 2024
+# Process ID: 26420
+# Current directory: C:/Users/machs/Software/ECE532/assignment_2/part2/proj/proj_p2.runs/synth_1
+# Command line: vivado.exe -log preadd532.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source preadd532.tcl
+# Log file: C:/Users/machs/Software/ECE532/assignment_2/part2/proj/proj_p2.runs/synth_1/preadd532.vds
+# Journal file: C:/Users/machs/Software/ECE532/assignment_2/part2/proj/proj_p2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source preadd532.tcl -notrace
